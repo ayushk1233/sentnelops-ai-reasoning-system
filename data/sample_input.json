@@ -1,0 +1,29 @@
+[
+  {
+    "resource_id": "i-1",
+    "cpu_avg": 2,
+    "cpu_p95": 5,
+    "memory_avg": 70,
+    "network_pct": 10,
+    "internet_facing": true,
+    "identity_attached": true
+  },
+  {
+    "resource_id": "i-2",
+    "cpu_avg": 85,
+    "cpu_p95": 98,
+    "memory_avg": 40,
+    "network_pct": 60,
+    "internet_facing": false,
+    "identity_attached": false
+  },
+  {
+  "resource_id": "i-3",
+  "cpu_avg": 50,
+  "cpu_p95": 55,
+  "memory_avg": 50,
+  "network_pct": 30,
+  "internet_facing": false,
+  "identity_attached": true
+}
+]
