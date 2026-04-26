@@ -1,0 +1,29 @@
+[
+  {
+    "resource_id": "i-1",
+    "is_anomalous": true,
+    "anomaly_type": "over_provisioned",
+    "reason": "The CPU utilization is consistently low (average 2%, 95th percentile 5%), whereas memory usage remains relatively high at 70%, suggesting an imbalance in resource allocation and potential over-provisioning of CPU capacity.",
+    "suggested_action": "Consider downsizing the instance to reduce cost.",
+    "confidence": 0.84,
+    "security_note": "High risk: Internet-facing resource with identity attached."
+  },
+  {
+    "resource_id": "i-2",
+    "is_anomalous": true,
+    "anomaly_type": "overloaded",
+    "reason": "The CPU is experiencing sustained high utilization, with an average usage of 85% and peaks reaching 98% at the 95th percentile. This indicates the system is under significant processing load, potentially impacting performance.",
+    "suggested_action": "Scale up resources or distribute load.",
+    "confidence": 0.92,
+    "security_note": null
+  },
+  {
+    "resource_id": "i-3",
+    "is_anomalous": false,
+    "anomaly_type": "balanced_usage",
+    "reason": "CPU utilization averages 50% with a 95th percentile of 55%, memory usage is at 50%, and network activity is 30%, all indicating stable and balanced resource consumption without any significant anomalies. This reflects normal operational performance across key system metrics.",
+    "suggested_action": "Continue monitoring for any unusual trends.",
+    "confidence": 0.4,
+    "security_note": "Low risk: Identity attached, ensure least privilege."
+  }
+]
